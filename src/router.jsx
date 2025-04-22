@@ -3,6 +3,7 @@ import MainLayout from "./layout/MainLayout/MainLayout";
 import { Children } from "react";
 import Home from "./pages/Home/Home";
 import Register from "./pages/Register";
+import SignIn from "./pages/Singin/SignIn";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "Register",
+        path: "register",
         element: <Register></Register>,
+      },
+      {
+        path: "signin",
+        element: <SignIn></SignIn>,
       },
     ],
   },
