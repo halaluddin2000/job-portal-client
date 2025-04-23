@@ -7,33 +7,32 @@ function Banner() {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="flex-1">
           <motion.img
-            transition={{ duration: 10, repeat: Infinity }}
+            transition={{ duration: 15, repeat: Infinity }}
             animate={{ y: [50, 150, 50] }}
             src={banner1}
             className="max-w-sm w-80 rounded-tr-[35px] rounded-tl-[35px] rounded-br-[35px] border-l-4 border-b-4  border-green-500 shadow-2xl"
           />
           <motion.img
-            transition={{ duration: 10, repeat: Infinity }}
+            transition={{ duration: 15, repeat: Infinity }}
             animate={{ x: [50, 150, 50] }}
             src={banner2}
             className="max-w-sm w-80 rounded-tr-[35px] rounded-tl-[35px] rounded-br-[35px] border-l-4 border-b-4  border-green-500 shadow-2xl"
           />
         </div>
-        <div className="flex-1">
-          <motion.h1
-            animate={{ y: 20 }}
-            transition={{ duration: 2, delay: 1, repeat: Infinity }}
-            className="text-5xl font-bold"
-          >
-            Box Office News!
-          </motion.h1>
+        <motion.div
+          animate={{ y: [130, 0] }}
+          transition={{ duration: 2, delay: 1 }}
+          className="flex-1"
+        >
+          <h1 className="text-5xl font-bold">
+            The <span className="text-[#3C65F5]">Easiest Way </span>
+            to Get Your New Job
+          </h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Each month, more than 3 million job seekers turn to website in their
+            search for work, making over 140,000 applications every single day
           </p>
-          <button className="btn btn-primary">Get Started</button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
