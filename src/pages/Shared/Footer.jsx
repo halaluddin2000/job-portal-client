@@ -1,4 +1,4 @@
-import logo from "../../../assets/logo-icons-100.png";
+import logo from "../../assets/logo-icons-100.png";
 const Footer = () => {
   return (
     <footer className="footer flex justify-between bg-base-200 text-base-content p-10">

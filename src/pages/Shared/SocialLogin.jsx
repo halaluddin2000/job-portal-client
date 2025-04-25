@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import AuthContext from "../../../context/authContext/AuthContext";
+import AuthContext from "../context/authContext/AuthContext";
 
 const SocialLogin = () => {
   const { googleSign } = useContext(AuthContext);
