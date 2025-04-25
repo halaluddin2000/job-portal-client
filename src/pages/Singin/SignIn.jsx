@@ -1,8 +1,8 @@
 import Lottie from "lottie-react";
 import React, { useContext } from "react";
-import loginLottieData from "../assets/lognIn.json";
-import AuthContext from "../context/authContext/AuthContext";
-import SocialLogin from "./Home/Shared/SocialLogin";
+import loginLottieData from "../../assets/lognIn.json";
+import AuthContext from "../../context/authContext/AuthContext";
+import SocialLogin from "../Shared/SocialLogin";
 
 const SignIn = () => {
   const { signInUser } = useContext(AuthContext);
