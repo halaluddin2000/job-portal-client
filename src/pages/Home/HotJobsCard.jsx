@@ -1,7 +1,9 @@
 import { IoLocation } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function HotJobsCard({ job }) {
   const {
+    _id,
     title,
     company,
     company_logo,
@@ -40,7 +42,9 @@ function HotJobsCard({ job }) {
           <p>
             Salary : {salaryRange.min}-{salaryRange.max} {salaryRange.currency}
           </p>
-          <button className="btn btn-primary">apply Now</button>
+          <Link to={`/jobs/${_id}`}>
+            <button className="btn btn-primary">apply Now</button>
+          </Link>
         </div>
       </div>
     </div>
